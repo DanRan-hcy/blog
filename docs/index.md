@@ -1,27 +1,16 @@
 ---
 layout: home
-
-hero:
-  name: 我的技术博客
-  text: 分享技术，记录成长
-  tagline: 专注于Web开发、Node.js和前端技术
-  actions:
-    - theme: brand
-      text: 开始阅读
-      link: /articles/
-    - theme: alt
-      text: 关于我
-      link: /about/
-
-features:
-  - icon: 🚀
-    title: 技术栈
-    details: Vue.js, React, Node.js, TypeScript等前端技术
-  - icon: 📝
-    title: 博客文章
-    details: 分享学习心得，技术见解和实践经验
-  - icon: 🌟
-    title: 开源项目
-    details: 参与开源，回馈社区，共同成长
-
+# 首页部分元素定制
+blog:
+ name: '淡然'
+ motto: 简约风的 Vitepress 博客主题
+ inspiring:
+  - 基于 Vitepress 定制的主题🎨
+  - 千万不要因为走得太久，而忘记了我们为什么出发
+  - 人生就像一场修行，你不可能一开始就修成正果
+  - 无论多么沉重的负担，也不要忘记微笑；无论多么漫长的路程，也不要忘记坚持
+  - 生活的真谛不在繁华，而在于淡泊
+ # 设置 inspiringTimeout 可以实现自动切换
+ inspiringTimeout: 3000
+ pageSize: 6
 ---

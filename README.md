@@ -1,64 +1,69 @@
-# 我的技术博客
+<h1 align="center"> VitePress @sugarat/theme </h1>
 
-这是一个基于VitePress构建的技术博客，用于分享编程技术和学习心得。
+<p align="center">
+简约风的 <a href="https://theme.sugarat.top"  target="_blank"target="_blank">VitePress 博客主题</a> 示例运行项目。
+</p>
 
-## 特性
+<p align="center">
+    <a href="https://atqq.github.io/vitepress-blog-sugar-template/" target="_blank">GitHub Pages Demo</a>
+</p>
 
-- 基于VitePress构建，享受Vue.js的开发体验
-- 响应式设计，适配各种设备
-- 自动部署到GitHub Pages
-- 支持Markdown编写文章
-- 内置搜索功能
+## Usage
 
-## 部署说明
+先安装 `pnpm`
 
-本博客已配置GitHub Actions自动部署到GitHub Pages。当代码推送到main分支时，会自动触发构建和部署流程。
-
-### 部署步骤
-
-1. 确保你的GitHub仓库已启用GitHub Pages功能
-2. 将代码推送到main分支
-3. GitHub Actions会自动构建并部署到gh-pages分支
-4. 访问 https://<你的用户名>.github.io/blog/ 查看部署结果
-
-## 本地开发
-
-### 安装依赖
-
-```bash
-npm install
+```sh
+npm i -g pnpm
 ```
 
-### 启动开发服务器
+安装依赖
 
-```bash
-npm run dev
+```sh
+pnpm install
 ```
 
-### 构建静态网站
+开发启动
 
-```bash
-npm run build
+```sh
+pnpm dev
 ```
 
-### 预览构建结果
+构建
 
-```bash
-npm run serve
+```sh
+pnpm build
 ```
 
-## 目录结构
+预览产物
 
+```sh
+pnpm serve
 ```
-.
-├── docs                  # 文档目录
-│   ├── .vitepress       # VitePress配置
-│   │   └── config.ts    # 配置文件
-│   ├── public           # 静态资源
-│   ├── about            # 关于页面
-│   ├── articles         # 文章目录
-│   └── index.md         # 首页
-├── .github              # GitHub配置
-│   └── workflows        # GitHub Actions工作流
-└── package.json         # 项目配置
+
+## Github Pages 部署
+
+① Github Pages 开启 Git Actions 部署支持
+
+![](https://img.cdn.sugarat.top/mdImg/sugar/8a2454c628d0e2abcc7a0451ddd7d2dc)
+
+② 复制文件 `.github/workflows/deploy.yml` 到自己的项目相同目录下
+
+示例项目已包含，可以直接进行下一步
+
+③ 修改 `docs/.vitepress/config.mts` 里的构建配置
+
+**如果项目名已经为 name.github.io 域名，则不需要修改，保持默认值 `/` 即可**
+
+`base` 改为 `"/仓库名/"` 即可
+
+```ts
+// 省略无关代码
+const base = '/vitepress-blog-sugar-template/'
+export default defineConfig({
+  base,
+})
 ```
+
+④ 推送 `main` 分支即可
+
+需要进一步修改部署和构建配置，详见`deploy.yml` 文件。
