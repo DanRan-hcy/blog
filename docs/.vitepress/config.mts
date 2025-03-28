@@ -46,8 +46,26 @@ export default defineConfig({
     // },
     nav: [
       { text: '首页', link: '/' },
-      { text: '关于我', link: '/about' },  // 添加这一行
+      { text: '开发日常', link: '/posts/daily/' },
+      { text: '关于我', link: '/about' },
     ],
+    // 添加侧边栏配置
+    sidebar: {
+      '/posts/daily/': [
+        {
+          text: '开发日常',
+          items: [
+            {
+              text: 'PHP',
+              collapsed: false,
+              items: [
+                { text: 'Hyperf模型修改器问题', link: '/posts/daily/php/hyperf-attr' }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     socialLinks: [
       {
         icon: 'github',
