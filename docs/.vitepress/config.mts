@@ -50,23 +50,23 @@ export default defineConfig({
       { text: '关于我', link: '/about' },
     ],
     // 添加侧边栏配置
-    // sidebar: {
-    //   '/posts/daily/': [
-    //     {
-    //       text: '开发日常',
-    //       items: [
-    //         {
-    //           text: 'PHP',
-    //           collapsed: false,
-    //           items: [
-    //             { text: 'Hyperf模型修改器问题', link: '/posts/daily/php/hyperf-attr' },
-    //             { text: 'ThinkPHP5.0 适配达梦8', link: '/posts/daily/php/dm8' },
-    //           ]
-    //         }
-    //       ]
-    //     }
-    //   ]
-    // },
+    sidebar: {
+      '/posts/daily/': [
+        {
+          text: '开发日常',
+          items: [
+            {
+              text: 'PHP',
+              collapsed: false,
+              items: [
+                { text: 'Hyperf模型修改器问题', link: '/posts/daily/php/hyperf-attr' },
+                { text: 'ThinkPHP5.0 适配达梦8', link: '/posts/daily/php/dm8' },
+              ]
+            }
+          ]
+        }
+      ]
+    },
     socialLinks: [
       {
         icon: 'github',
