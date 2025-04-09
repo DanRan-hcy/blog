@@ -1,6 +1,7 @@
 ---
 title: 开发日常
 description: 记录日常开发中的经验与思考
+hidden: true
 ---
 
 # 开发日常

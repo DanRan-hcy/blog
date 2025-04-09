@@ -1,5 +1,7 @@
 ---
-sticky: 1
+sticky: 99
+top: 1
+readingTime: true
 ---
 
 # 关于我

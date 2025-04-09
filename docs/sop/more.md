@@ -1,5 +1,6 @@
 ---
-top: 3
+# top: 3
+hidden: true
 ---
 # 更多能力
 
