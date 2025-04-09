@@ -2,6 +2,7 @@
 sticky: 99
 top: 1
 readingTime: true
+comment: false
 ---
 
 # 关于我
