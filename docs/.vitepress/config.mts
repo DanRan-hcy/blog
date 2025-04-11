@@ -51,7 +51,8 @@ export default defineConfig({
   head: [
     // 配置网站的图标（显示在浏览器的 tab 上）
     // ['link', { rel: 'icon', href: `${base}favicon.ico` }], // 修改了 base 这里也需要同步修改
-    ['link', { rel: 'icon', href: '/blog/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/blog/favicon.ico' }],
+    ['meta', { name: 'google-site-verification', content: 'egm1goU17DznjndARCeOFiO1mioJ5t0CkPWmIbxp7Pw' }]
   ],
   themeConfig: {
     // 展示 2,3 级标题在目录中
