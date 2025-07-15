@@ -1,6 +1,6 @@
 ---
 title: Hyperf 模型修改器与类型转换的冲突问题
-date: 2024-03-19
+date: 2025-03-19
 sticky: 1
 readingTime: true
 tags:

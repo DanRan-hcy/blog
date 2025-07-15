@@ -1,6 +1,6 @@
 ---
 title: ThinkPHP5.0 适配达梦8
-date: 2024-04-09
+date: 2025-04-09
 sticky: 2
 publish: true
 readingTime: true
