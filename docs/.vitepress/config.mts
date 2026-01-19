@@ -87,6 +87,7 @@ export default defineConfig({
               text: 'PHP',
               collapsed: false,
               items: [
+                { text: 'Hyperf 协程开发踩坑实录', link: '/posts/daily/php/hyperf-coroutine-traps' },
                 { text: 'Hyperf模型修改器问题', link: '/posts/daily/php/hyperf-attr' },
                 { text: 'ThinkPHP5.0 适配达梦8', link: '/posts/daily/php/dm8' },
               ]
