@@ -1,6 +1,6 @@
 ---
 title: HotGo 适配达梦数据库实战：从 MySQL 到国产化的迁移之路
-date: 2025-01-21
+date: 2026-01-21
 sticky: 3
 readingTime: true
 tags:
