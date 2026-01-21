@@ -84,6 +84,13 @@ export default defineConfig({
           text: '开发日常',
           items: [
             {
+              text: 'Go',
+              collapsed: false,
+              items: [
+                { text: 'HotGo 适配达梦数据库实战', link: '/posts/daily/go/hotgo-dm8-adaptation' },
+              ]
+            },
+            {
               text: 'PHP',
               collapsed: false,
               items: [
